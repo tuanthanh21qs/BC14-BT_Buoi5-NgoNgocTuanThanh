@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TÍNH TIỀN ĐIỆN</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 id="BT_h1">QUẢN LÝ SINH VIÊN</h1>
+
+    <div class="BT1__content">
+      <form>
+        <div class="BT1__text">
+          <div>
+            <label>Nhập điểm chuẩn của hội đồng thi:</label>
+            <input type="text" placeholder="20" id="diemChuan">
+          </div>
+        
+          <div>
+            <label>Nhập điểm 3 môn của thí sinh:</label>
+            <input type="text" placeholder="20" id="diemThi">
+          </div>
+                  
+        
+        </div>        
+
+        <div class="BT1__khuvuc">
+          <p>Chọn khu vực ưu tiên</p>     
+            <div class="BT1__radio">
+              <label>
+                <input type="radio" id="kvA" name="khuVuc" value="2">
+                Khu vực A
+              </label>
+
+              <label>
+                <input type="radio" id="kvB" name="khuVuc" value="1">
+                Khu vực B
+              </label>
+
+              <label>
+                <input type="radio" id="kvC" name="khuVuc" value="0.5">
+                Khu vực C
+              </label>
+
+              <label>
+
+              <input type="radio" id="nkv" name="khuVuc" value="0" checked>
+                Không thuộc khu vực ưu tiên
+              </label>                     
+            </div>                                   
+        </div>
+        
+        <div class="BT1__doituong">
+            <p>Đối tượng ưu tiên</p>
+
+            <div class="BT1__radio">
+              <label> <input type="radio" id="dt1" name="doiTuong" value="2.5">
+                Đối tượng ưu tiên 1</label>
+    
+              
+                <label> <input type="radio" id="dt2" name="doiTuong" value="1.5">
+                Đối tượng ưu tiên 2</label>
+    
+                
+                <label> <input type="radio" id="dt3" name="doiTuong" value="1">
+                Đối tượng ưu tiên 3</label>
+               
+                <label>  <input type="radio" id="ndt" name="doiTuong" value="0" checked>
+                Không thuộc đối tượng ưu tiên</label>
+            </div>
+            
+          </div>                
+      </form>  
+
+      <button onclick="BT1()">Kết quả</button>  
+      
+      <p id="KQ1"></p>
+    </div>
+      <script src="./js/main.js"></script>
+    </div>
+  </body>
+</html>
